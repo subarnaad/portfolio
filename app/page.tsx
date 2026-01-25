@@ -1,22 +1,18 @@
-import Link from "next/link";
-export default function Page() {
+import BlogSection from "../sections/BlogSection";
+import HomeSection from "../sections/HomeSection";
+import ProjectsSection from "../sections/ProjectsSection";
+import ContactSection from "../sections/ContactSection";
+import Navbar from "@/components/Navbar/Navbar";
+import Footer from "@/components/Footer/Footer";
+export default function HomePage() {
   return (
     <>
-      <section id="home" className="min-h-screen">
-        <h1>Home</h1>
-      </section>
-
-      <section id="projects" className="min-h-screen">
-        <h1>Projects</h1>
-      </section>
-
-      <section id="blog" className="min-h-screen">
-        <Link href="/#blog">Blog</Link>
-      </section>
-
-      <section id="contact" className="min-h-screen">
-        <h1>Contact</h1>
-      </section>
+      <Navbar/>
+      <HomeSection />
+      <ProjectsSection />
+      <BlogSection />
+      <ContactSection />
+      <Footer/>
     </>
   );
 }
