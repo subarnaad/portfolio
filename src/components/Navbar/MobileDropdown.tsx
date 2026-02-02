@@ -19,7 +19,7 @@ export default function MobileDropdown({ handleScroll }: { handleScroll: (id: st
         {sections.map((sec) => (
           <DropdownMenuItem asChild key={sec}>
             <button
-              className="w-full text-left p-2"
+              className="w-full text-left p-2 border-b-2 border-blue-400 cursor-pointer"
               onClick={() => {
                 handleScroll(sec);
                 setOpen(false);

@@ -1,5 +1,3 @@
-import github from '../../../public/github.png'
-import Image from 'next/image';
 
 export default function Footer() {
   return (
