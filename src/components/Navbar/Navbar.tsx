@@ -21,7 +21,6 @@ export default function Navbar() {
                   px-4 sm:px-6 md:px-8 py-3 
                   shadow-lg shadow-foreground/20">
 
-    {/* Logo */}
     <div 
       className="text-base sm:text-lg md:text-xl font-bold cursor-pointer 
                  hover:text-purple-600 transition duration-300"
@@ -30,7 +29,6 @@ export default function Navbar() {
       Subarna Adhikari
     </div>
 
-    {/* Desktop Menu */}
     <div className="hidden md:flex space-x-6 lg:space-x-10">
       {sections.map((sec) => (
         <button
@@ -45,8 +43,6 @@ export default function Navbar() {
         </button>
       ))}
     </div>
-
-    {/* Mobile Menu */}
     <div className="md:hidden">
       <MobileDropdown handleScroll={handleScroll} />
     </div>
