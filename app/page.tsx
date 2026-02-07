@@ -12,10 +12,14 @@ import Intro from "@/components/animation/Intro";
 
 export default function Page() {
   const [entered, setEntered] = useState<boolean>(false);
+  const [brouse, setBrouse] = useState<boolean>(false);
+
+  // const brouse = ['recuiter', 'visitor']
 
   return (
     <>
       {!entered && <Intro onFinish={() => setEntered(true)} />}
+      {/* {!brouse && <Brouse onFinish={() => setBrouse(true)}} */}
       {entered && (
         <>
           <Navbar />

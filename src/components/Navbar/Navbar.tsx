@@ -21,7 +21,6 @@ export default function Navbar() {
       >
         Subarna Adhikari
       </div>
-
       <div className="hidden md:flex space-x-6 lg:space-x-10">
         {sections.map((sec) => (
           <button
