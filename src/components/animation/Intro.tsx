@@ -45,6 +45,14 @@ export default function Intro({ onFinish }: IntroProps) {
       <h1
         ref={nameRef}
         onClick={handleClick}
+        role="button"
+        tabIndex={0}
+        onKeyDown={(event) => {
+          if (event.key === "Enter" || event.key === " ") {
+            event.preventDefault();
+            handleClick();
+          }
+        }}
         className="cursor-pointer select-none text-[clamp(2.5rem,6vw,5rem)] font-medium tracking-wide">
         Subarna Adhikari
       </h1>
