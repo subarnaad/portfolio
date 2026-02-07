@@ -16,8 +16,7 @@ export default function Navbar() {
   return (
      <nav className="fixed top-8 left-1/2 -translate-x-1/2 z-50 w-[95%] sm:w-[90%] md:w-[80%] lg:w-[70%] xl:w-[60%] bg-background rounded-2xl flex items-center justify-between px-4 sm:px-6 md:px-8 py-3 shadow-lg shadow-foreground/20">
     <div 
-      className="text-base sm:text-lg md:text-xl font-bold cursor-pointer 
-                 hover:text-purple-600 transition duration-300"
+      className="text-base sm:text-lg md:text-xl font-bold cursor-pointer hover:text-purple-600 transition duration-300"
       onClick={() => handleScroll('home')}
     >
       Subarna Adhikari

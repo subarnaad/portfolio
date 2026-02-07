@@ -11,7 +11,7 @@ export default function MobileDropdown({ handleScroll }: { handleScroll: (id: st
 
   return (
     <DropdownMenu open={open} onOpenChange={setOpen}>
-      <DropdownMenuTrigger aria-label="Open menu" className="md:hidden">
+      <DropdownMenuTrigger aria-label="Open menu" className="md:hidden" >
         <Image src={menu} alt="menu" width={24} height={24} />
       </DropdownMenuTrigger>
 
