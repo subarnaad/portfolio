@@ -26,15 +26,15 @@ export default function Intro({ onFinish }: IntroProps) {
     tl.to(nameRef.current, {
       scale: 8,
       opacity: 0,
-      duration: 1,
+      duration: 3,
     }).to(
       introRef.current,
       {
         scale: 1.4,
         opacity: 0,
-        duration: 0.8,
+        duration: 3,
       },
-      "-=0.6"
+      "-=0.8"
     );
   };
 
