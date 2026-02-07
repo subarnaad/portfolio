@@ -1,7 +1,9 @@
-export default function HomeSection() {
+import ExperienceSection from "../src/components/timeline/ExperienceSection";
+
+export default function ProjectSection() {
   return (
-    <section id="projects" className="min-h-screen p-8 bg-red-500">
-      <h1>This is subarna</h1>
+    <section id="projects" className="min-h-screen p-8">
+      <ExperienceSection />
     </section>
   );
 }
