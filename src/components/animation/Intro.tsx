@@ -41,7 +41,7 @@ export default function Intro({ onFinish }: IntroProps) {
   return (
     <section
       ref={introRef}
-      className="fixed inset-0 z-50 flex items-center justify-center bg-[radial-gradient(circle_at_center,#111,#050505)]">
+      className="fixed inset-0 z-50 flex items-center justify-center bg-background">
       <h1
         ref={nameRef}
         onClick={handleClick}
@@ -53,8 +53,8 @@ export default function Intro({ onFinish }: IntroProps) {
             handleClick();
           }
         }}
-        className="cursor-pointer select-none text-[clamp(2.5rem,6vw,5rem)] font-medium tracking-wide">
-        Subarna Adhikari
+        className="cursor-pointer select-none text-foreground text-[clamp(2.5rem,6vw,5rem)] font-medium tracking-wide">
+        SUBARNA ADHIKARI
       </h1>
 
       <audio ref={audioRef} src="/sound/IntroSound.mp3" preload="auto" />

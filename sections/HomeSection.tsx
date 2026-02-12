@@ -5,7 +5,7 @@ export default function HomeSection() {
   return (
     <section
       id="home"
-      className="min-h-screen flex items-center justify-center px-6 lg:px-20"
+      className="min-h-screen flex items-center justify-center px-6 lg:px-20 "
     >
       <div className="max-w-6xl w-full grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
         <div className="flex justify-center lg:justify-start">
